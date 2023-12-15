@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MadSooter-Team Battle</title>
+    <link rel="stylesheet" href="game.css"/>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./networkcom.js"></script>
+    <script src="./game.js" defer></script>
+    <link rel="icon" href="./favicon.png"/>
+  </head>
+  <body>
+    <div id="userInput">
+      <div class="welcome">
+          <h1>🦄Mad Shooter-Team Battle👽</h1>
+        <label>UserName:</label>
+        <input type="text" id="username" required placeholder="UserName" maxlength="10"/>
+        <label>UserColor:</label>
+        <select id="usercolor" name="usercolor">
+          <option value="dodgerblue" selected>Dodgerblue</option>
+          <option value="violet">violet</option>
+          <option value="mediumseagreen">mediumseagreen</option>
+          <option value="slateblue">slateblue</option>
+          <option value="tomato">tomato</option>
+        </select>
+        <label>UserTeam:</label>
+        <div id="teamStatus"></div>
+        <select id="usergroup" name="usergruop">
+          <option value="0" selected>Random Team</option>
+          <option value="1">Red Team</option>
+          <option value="2">Blue Team</option>
+        </select>
+        <button onclick="startGame()">Start!</button>
+        <h1>This is Group's Battle.
+          <br/>
+          Win Goal : Your Team's Total Exp reach 600 Point!
+          <br/>
+          Please select your group and fight for your team.
+        </h1>
+      </div>
+      
+    </div>  
+  </body>
+</html>

@@ -1,0 +1,106 @@
+body{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+canvas{
+  background-color: white;
+}
+
+input{
+  padding: 10px 0px;
+  font-size: 20px;
+  font-family: 'comic sans ms';
+  border: none;
+  background-color: white;
+  color: dodgerblue;
+  outline: none;
+  border: 2px solid dodgerblue;
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+select{
+  width: 100%;
+  padding: 10px 0px;
+  font-family: 'comic sans ms';
+  font-size: 20px;
+  color: dodgerblue;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+label{
+  color: dodgerblue;
+  font-family: 'comic sans ms';
+  font-size: 24px;
+}
+
+input:focus{
+  border-bottom: 2px dodgerblue solid;
+}
+
+button{
+  margin-top: 40px;
+  width: 100%;
+
+  padding: 10px 40px;
+  border: 2px solid white;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 10px;
+  font-family: 'comic sans ms';
+  font-size: 20px;
+}
+
+
+button:hover{
+  border: 2px solid dodgerblue;
+  background-color: white;
+  color: dodgerblue;
+}
+
+#userInput{
+  display: block;
+  width: 60%;
+  top: 50px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: rgba(71, 101, 41, 0.4) 0px 3px 20px;
+}
+
+#userInput .welcome > h1{
+  display: block;
+  text-align: center;
+  font-family: 'segoe print';
+}
+
+.welcome{
+  padding: 20px 40px;
+
+}
+
+.bluestate{
+  font-size: 20pt;
+  display: block;
+  color: dodgerblue;
+  font-family: 'segoe print';
+}
+
+.redstate{
+  font-size: 20pt;
+  display: block;
+  color: tomato;
+  font-family: 'segoe print';
+}
+
+#teamStatus{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
